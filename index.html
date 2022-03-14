@@ -1,41 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> <!-- style css -->
-    <link rel="stylesheet" href="css/responsif.css"> <!-- responsif css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- font awesome css -->
-
-    <title>Document</title>
+    <title>Museum Geology</title>
+    <!-- <link rel="stylesheet" href="css/style.css">  style css -->
+    <!--  <link rel="stylesheet" href="css/responsif.css"> responsif css -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome css -->
+    <link rel="shortcut icon" href="img/logo.png">
 </head>
-<body>
-    <!--?  -->
-    <header>
-        <nav>
-            <h1 ><a href="#"></a></h1>
-            <div class="header-left">
-                <img class="logo" src="img/logo.png" alt="logo">
-            </div>
-            <span class="fa fa-bars menu-icon"></span>
-            <div class="header-right">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                  </ul>
-            </div>
-            
-          </nav>
-    </header>
-    <!-- <div class="wrap">
-        <div class="sticker"></div>
-        <div class="msg">new!</div>
-    </div> -->
-    <!--? Footer -->
-    <footer>
 
+<body>
+    <!-- //Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Museum<br>Geology</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="menu">Content</a></li>
+                <li><a href="#" class="menu">About Us</a></li>
+                <li><a href="#" class="btn">Contact Us</a></li>
+            </ul>
+            <img src="./img/main-menu.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+
+    <!-- header -->
+    <div class="banner">
+        <div class="banner-content">
+            <h2>"explore our earth, understand its dynamics and <br>find the trace of life in it"</h2>
+            <div class="line"></div>
+            <h1>Museum Geology</h1>
+            <p><a href="#"><span class="btn">More</span></a></p>
+        </div>
+    </div>
+
+    <!-- main -->
+    <section class="main">
+        <div class="title">
+            <h1>Content</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/cenozoic.jpg">
+                <h4>Cenozoid</h4>
+                <p>Cenozoid is represented by molluscs and foreminiferas for Tertiary period and vertebrate fossils for
+                    Quaternary period.</p>
+                <a href="#" class="btn-cen">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./img/rocks.png">
+                <h4>Rocks and Minerals</h4>
+                <p>Displays various types and classification of rocks and minerals and how to know it. </p>
+                <a href="#" class="btn-rocks">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- explore -->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE MUSEUM</h1>
+            <div class="line"></div>
+            <P>Geology Museum is a place of adventure that full of experience and knowledge. You can learn everyting
+                about our earth in a friendly and exciting environment. By exploring geologic time and space we would
+                understand many of earth's dynamics, geological phenomena and the traces of life in it.</P>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- more facilities -->
+    <section class="facilities">
+        <div class="row">
+            <div class="col content-col">
+                <h1>MUSEUM FACILITIES</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima optio architecto molestias sint illum
+                    consequuntur exercitationem eaque perspiciatis, mollitia laudantium veritatis molestiae quo
+                    voluptatibus, quibusdam cupiditate? Error autem maxime itaque!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./img/acient-era.jpg" alt="">
+                    <img src="./img/hominids.jpg" alt="">
+                    <img src="./img/tyrannosaurus.jpg" alt="">
+                    <img src="./img/world-ball.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h1>Museum Geology</h1>
+            <h3>It's Lovely Experience Walking Around A Museum By Yourself</h3>
+        </div>
     </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
 </body>
+
 </html>
