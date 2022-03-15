@@ -18,7 +18,7 @@
 
   <body>
     <!-- //Navbar -->
-    <header>
+    <!-- <header>
       <nav class="navbar">
         <h1 class="logo">Museum<br />Geology</h1>
         <ul class="nav-links">
@@ -29,7 +29,23 @@
         </ul>
         <img src="./img/main-menu.png" alt="" class="menu-btn" />
       </nav>
-    </header>
+    </header> -->
+
+    <!-- Navbar -->
+    <div class="container">
+        <div class="navigation">
+            <img class="logo" src="img/icon.png">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="menu">Content</a></li>
+                    <li><a href="#" class="menu">About Us</a></li>
+                    <li><a href="#" class="menu">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img class="main-menu" src="./img/home.png">
+        </div>
+    </div>
 
     <!-- header -->
     <div class="banner">
@@ -52,14 +68,6 @@
         <h1>Content</h1>
         <div class="line"></div>
       </div>
-      <!-- <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
-          </div>
-          <p class="txt-contents">Dua bahasa yang digunakan untuk membangun struktur dan design tambilan website anda.</p>
-        </div> -->
       <div class="row">
         <div class="col">
           <img src="./img/cenozoic.jpg" />
@@ -119,20 +127,22 @@
         </div>
       </div>
     </section>
+
     <footer>
-      <div class="container">
+      <div class="bottom">
         <h1>Museum Geology</h1>
         <h3>It's Lovely Experience Walking Around A Museum By Yourself</h3>
-      </div>
+      </div> 
     </footer>
 
-    <script>
-      const menuBtn = document.querySelector(".menu-btn");
-      const navlinks = document.querySelector(".nav-links");
+    <!-- <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
 
-      menuBtn.addEventListener("click", () => {
-        navlinks.classList.toggle("mobile-menu");
-      });
-    </script>
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script> -->
+
   </body>
 </html>
