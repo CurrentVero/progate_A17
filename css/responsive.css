@@ -1,4 +1,4 @@
-/* mobile device */
+/* Resolusi Tablet */
 @media all and (max-width: 888px) {
   .explore {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Museum_Geologi_-_Bandung%2C_Indonesia_-_panoramio.jpg);
@@ -8,15 +8,24 @@
     text-align: center;
   }
 
+  .col img{
+    width: 70%;
+  }
+
 }
 
-@media all and (max-width: 670px) {
-  /* Content responsive */
+/* Resolusi Smartphone */
+@media all and (max-width: 720px) {
   .explore p {
     display: none;
   }
+
   .facilities p {
     display: none;
+  }
+
+  .content-col a{
+    margin-left: 10px;
   }
 
   nav ul{
@@ -52,6 +61,14 @@
 
   .menu:hover{
     color:black;
+  }
+
+  .col img{
+    width: 70%;
+  }
+
+  .col p{
+    display: none;
   }
   
 }

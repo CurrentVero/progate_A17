@@ -7,8 +7,7 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
   overflow-x: hidden;
 }
 
@@ -150,9 +149,11 @@ nav ul li a:hover {
   color: rgb(255, 255, 255);
   text-align: center;
 }
+
 .banner-content h2 {
   font-size: 4vmin;
 }
+
 .line {
   width: 150px;
   height: 4px;
@@ -169,11 +170,12 @@ nav ul li a:hover {
 }
 
 .btn {
-  padding: 8px 15px;
+  padding: 8px 30px;
   background: #ff54a2;
   border-radius: 30px;
   color: rgb(0, 0, 0);
   margin-top: 15px;
+  position: relative;
 }
 
 .btn:hover {
@@ -193,7 +195,7 @@ nav ul li a:hover {
 /* main */
 section {
   width: 80%;
-  margin: 80px auto;
+  margin: 70px auto;
 }
 
 .title {
@@ -205,13 +207,14 @@ section {
 .row {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
   justify-content: space-between;
 }
 
 .row .col {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -227,16 +230,23 @@ h4 {
 
 p {
   color: #7c7c7c;
-  padding: 0px 40px;
+  padding: 0px 60px;
   font-size: medium;
+}
+
+.col p {
+  text-align: center;
+}
+
+.col img {
+  margin-right: 10px;
 }
 
 .main .btn {
   margin-top: 30px;
 }
 
-.btn-cen,
-.btn-rocks {
+.btn-cen, .btn-rocks, .btn-mus {
   padding: 8px 15px;
   background: deeppink;
   border-radius: 30px;
@@ -250,6 +260,11 @@ p {
 }
 
 .btn-rocks:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.btn-mus:hover {
   background-color: aquamarine;
   color: black;
 }
@@ -313,7 +328,8 @@ p {
 .image-gallery img {
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .content-col h1 {
@@ -330,9 +346,9 @@ p {
   margin-left: -1px;
 }
 
-.content-col .btn {
+/* .content-col .btn {
   margin-left: -100px;
-}
+} */
 
 /* Footer */
 footer h3 {
@@ -340,15 +356,18 @@ footer h3 {
   font-size: 12px;
   margin-top: 10px;
 }
+
 footer h1 {
   color: whitesmoke;
+  font-size: 30px;
 }
+
 footer {
   padding: 20px;
   background-color: #484872;
 }
 
-/* Animatiton */
+/* Animasi */
 @keyframes bgimage {
   0% {
     background: linear-gradient(
@@ -402,7 +421,8 @@ footer {
   }
 }
 
-@media only screen and (max-width:700px){
+/* Resolusi Smartphone */
+@media only screen and (max-width:720px){
     nav ul{
         width: 100%;
         background: linear-gradient(#ff54a2, #ff575a);
@@ -437,10 +457,8 @@ footer {
     .menu:hover{
         color:black;
     }
-
 }
   
-/* mobile device */
 /* @media only screen and (max-width: 850px) {
     .navbar {
         padding: 0;
